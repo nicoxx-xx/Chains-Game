@@ -18,6 +18,7 @@ This project demonstrates a basic implementation of the classic "Arrows" or "Cha
 
 ### Run the Game
 ```bash
+py chains.py -h
 usage: chains.py [-h] [-n N] [-m M] [-k K] [--timer | --no-timer]
 
 Puzzle Game: Clear the grid of orthogonal chains.
