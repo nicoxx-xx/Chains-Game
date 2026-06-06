@@ -5,7 +5,6 @@ import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib.widgets import Button, TextBox
 
-
 def center_figure():
     manager = plt.get_current_fig_manager()
     window = manager.window
@@ -25,7 +24,6 @@ def center_figure():
     y = (hs // 2) - (h // 2)
 
     window.geometry(f"{w}x{h}+{x}+{y}")
-
 
 def print_dictionary(diz):
     print("\nGenerated dictionary:")
@@ -190,7 +188,6 @@ class InteractiveApplication:
 
         self.update_plot()
 
-
     def start_timer(self):
         if self.running: #to handle subsequent start_timer call (off-sequence start/stop)
             self.running = False
@@ -222,7 +219,6 @@ class InteractiveApplication:
         self.fig.suptitle(f"{h:02d}:{m:02d}:{s:02d}", fontsize=12, fontweight='bold', color='green', ha='center', va='top')
         self.fig.canvas.draw_idle()
         self.fig.canvas.set_cursor(1)
-
 
     def generate_color_map(self):
         """Assigns a unique color to each chain."""
@@ -332,7 +328,6 @@ if __name__ == "__main__":
     parser.add_argument("-m", type=int, default=8, help="Number of matrix columns (M)")
     parser.add_argument("-k", type=int, default=5, help="Maximum length of each chain (K)")
     parser.add_argument("--timer", action=argparse.BooleanOptionalAction, default=False, help="Enable or disable game timer")
-
 
     args = parser.parse_args()
 
