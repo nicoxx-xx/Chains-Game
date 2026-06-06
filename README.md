@@ -35,4 +35,4 @@ options:
 This project is licensed under the MIT License.  
 
 ## 🙌 Contributions
-Feel free to fork, improve, and submit pull requests!
+Feel free to fork and improve!
