@@ -17,7 +17,7 @@ This project demonstrates a basic implementation of the classic "Arrows" or "Cha
 - MatPlotLib
 
 ### Run the Game
-
+```bash
 usage: chains.py [-h] [-n N] [-m M] [-k K] [--timer | --no-timer]
 
 Puzzle Game: Clear the grid of orthogonal chains.
@@ -28,6 +28,7 @@ options:
   -m M                 Number of matrix columns (M)
   -k K                 Maximum length of each chain (K)
   --timer, --no-timer  Enable or disable game timer
+```
   
 ## 📄 License
 This project is licensed under the MIT License.  
