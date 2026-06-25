@@ -1,3 +1,4 @@
+#import winsound
 import random
 import time
 import argparse
@@ -286,11 +287,13 @@ class InteractiveApplication:
                 self.ax.set_title("GRID COMPLETELY CLEARED!", color='green', fontsize=14, weight='bold')
                 self.fig.canvas.draw_idle()
                 self.stop_timer()
+                #winsound.PlaySound("SystemAsterisk", winsound.SND_ALIAS)
             elif free_remaining == 0:
                 print("\nGame Over: No more removable chains!")
                 self.ax.set_title("GAME OVER - NO MOVES AVAILABLE!", color='red', fontsize=12, weight='bold')
                 self.fig.canvas.draw_idle()
                 self.stop_timer()
+                #winsound.PlaySound("SystemExclamation", winsound.SND_ALIAS)
         else:
             print("Invalid click: the point is not an end or the exit path is blocked.")
 
@@ -324,10 +327,11 @@ if __name__ == "__main__":
         description="Puzzle Game: Clear the grid of orthogonal chains."
     )
 
-    parser.add_argument("-n", type=int, default=6, help="Number of matrix rows (N)")
-    parser.add_argument("-m", type=int, default=8, help="Number of matrix columns (M)")
-    parser.add_argument("-k", type=int, default=5, help="Maximum length of each chain (K)")
-    parser.add_argument("--timer", action=argparse.BooleanOptionalAction, default=False, help="Enable or disable game timer")
+    parser.add_argument("-n", type=int, default=13, help="Number of matrix rows (N)")
+    parser.add_argument("-m", type=int, default=16, help="Number of matrix columns (M)")
+    parser.add_argument("-k", type=int, default=6, help="Maximum length of each chain (K)")
+    parser.add_argument("--timer", action=argparse.BooleanOptionalAction, default=True, help="Enable or disable game timer (default: \033[1m%(default)s\033[0m)")
+
 
     args = parser.parse_args()
 
