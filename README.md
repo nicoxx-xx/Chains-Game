@@ -28,7 +28,7 @@ options:
   -n N                 Number of matrix rows (N)
   -m M                 Number of matrix columns (M)
   -k K                 Maximum length of each chain (K)
-  --timer, --no-timer  Enable or disable game timer
+  --timer, --no-timer  Enable or disable game timer (default: True)
 ```
   
 ## 📄 License
