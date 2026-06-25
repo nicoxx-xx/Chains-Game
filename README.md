@@ -4,6 +4,8 @@ A simple interactive Python game implemented in `chains.py`.
 
 This project demonstrates a basic implementation of the classic "Arrows" or "Chains" game using Python; for beginners or educational purposes.
 
+![Demo Image](./images/Chain_Demo.png)
+
 ## 📦 Features
 
 - Simple and interactive gameplay
